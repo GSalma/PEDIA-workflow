@@ -49,6 +49,13 @@ Now we created an enviroment called `pedia_quality`. We can activate it and we s
 source activate pedia_quality
 snakemake -h
 ```
+
+Alternatively, when using fish shell you will need to add the following to the fish config.
+```
+source (conda info --root)/etc/fish/conf.d/conda.fish
+```
+And replace source with conda. (Since source is a reserved keyword in the fish shell)
+
 We can deactivate the environment using `source deactivate`. The command `conda env list` will list you all environments.
 
 ### Use snakemake
